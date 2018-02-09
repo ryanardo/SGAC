@@ -10,6 +10,12 @@ describe('SGAC', function () {
 			assert.equal(31536000000, SGAC.ageInMilliseconds('1971-01-01'));
 		});
 	});
+	// Convert milliseconds to seconds
+	describe('milliSecondsToSeconds', function () {
+		it('[milliSecondsToSeconds] should return 31536000 seconds.', function () {
+			assert.equal(31536000, SGAC.milliSecondsToSeconds(31536000000));
+		});
+	});
 
 
 	/* * * * * * * * * * End: SGAC Class Tests * * * * * * * * * */
