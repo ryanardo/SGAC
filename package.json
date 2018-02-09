@@ -3,8 +3,8 @@
 	"version": "1.0.0",
 	"main": "src/index.js",
 	"scripts": {
-		"dev": "webpack-dev-server --open --config config/webpack.dev.js",
-		"prod": "webpack --config config/webpack.prod.js",
+		"dev": "webpack-dev-server --open --config config/webpack.development.js",
+		"prod": "webpack --config config/webpack.production.js",
 		"test": "mocha-webpack --webpack-config config/webpack.test.js \"test/**/*test.js\""
 	},
 	"keywords": [],
