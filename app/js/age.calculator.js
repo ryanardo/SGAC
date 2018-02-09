@@ -9,3 +9,10 @@ export function milliSecondsToSeconds(ms) {
 	let msToSec = ms * convertRatio;
 	return msToSec;
 }
+
+export function dateDifference(date1, date2) {
+	let d1 = ageInMilliseconds(date1);
+	let d2 = ageInMilliseconds(date2);
+
+	return milliSecondsToSeconds(d1 - d2);
+}
