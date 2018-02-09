@@ -16,6 +16,12 @@ describe('SGAC', function () {
 			assert.equal(31536000, SGAC.milliSecondsToSeconds(31536000000));
 		});
 	});
+	// Calculate difference between two dates.
+	describe('dateDifference', function () {
+		it('[dateDifference] should return 31536000 seconds.', function () {
+			assert.equal(31536000, SGAC.dateDifference('1971-01-01', '1970-01-01'));
+		});
+	});
 
 
 	/* * * * * * * * * * End: SGAC Class Tests * * * * * * * * * */
