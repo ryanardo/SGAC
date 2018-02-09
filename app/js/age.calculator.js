@@ -16,3 +16,11 @@ export function dateDifference(date1, date2) {
 
 	return milliSecondsToSeconds(d1 - d2);
 }
+
+export function mercury(age) {
+	const conversionRateMercury = 0.24;
+	let ageEarth = ageInMilliseconds(age);
+	let ageMercury = new Date(ageEarth / conversionRateMercury);
+
+	return Math.abs(ageMercury.getFullYear() - 1970);
+}
