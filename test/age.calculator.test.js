@@ -22,6 +22,12 @@ describe('SGAC', function () {
 			assert.equal(31536000, SGAC.dateDifference('1971-01-01', '1970-01-01'));
 		});
 	});
+	// Calculate age if born on Mercury.
+	describe('mercury', function () {
+		it('[mercury] should return 31536000 seconds.', function () {
+			assert.equal(79, SGAC.mercury('1989-03-07'));
+		});
+	});
 
 
 	/* * * * * * * * * * End: SGAC Class Tests * * * * * * * * * */
