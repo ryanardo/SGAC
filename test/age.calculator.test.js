@@ -34,11 +34,17 @@ describe('SGAC', function () {
 			assert.equal(30, SGAC.venus('1989-03-07'));
 		});
 	});
-
 	// Calculate age if born on Mars.
 	describe('mars', function () {
 		it('[mars] should return 10 years old.', function () {
 			assert.equal(10, SGAC.mars('1989-03-07'));
+		});
+	});
+
+	// Calculate age if born on Jupiter.
+	describe('jupiter', function () {
+		it('[jupiter] should return 1 years old.', function () {
+			assert.equal(1, SGAC.jupiter('1989-03-07'));
 		});
 	});
 
