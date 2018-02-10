@@ -29,6 +29,12 @@ describe('SGAC', function () {
 		});
 	});
 
+	// Calculate age if born on Venus.
+	describe('venus', function () {
+		it('[venus] should return 31536000 seconds.', function () {
+			assert.equal(30, SGAC.venus('1989-03-07'));
+		});
+	});
 
 	/* * * * * * * * * * End: SGAC Class Tests * * * * * * * * * */
 });
