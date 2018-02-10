@@ -28,7 +28,15 @@ export function mercury(age) {
 export function venus(age) {
 	const conversionRateVenus = 0.62;
 	let ageEarth = ageInMilliseconds(age);
-	let ageMercury = new Date(ageEarth / conversionRateVenus);
+	let ageVenus = new Date(ageEarth / conversionRateVenus);
 
-	return Math.abs(ageMercury.getFullYear() - 1970);
+	return Math.abs(ageVenus.getFullYear() - 1970);
+}
+// Return the age of a human in Mars years. (A Mars year is 1.88 Earth years.)
+export function mars(age) {
+	const conversionRateMars = 1.88;
+	let ageEarth = ageInMilliseconds(age);
+	let ageMars = new Date(ageEarth / conversionRateMars);
+
+	return Math.abs(ageMars.getFullYear() - 1970);
 }
