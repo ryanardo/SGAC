@@ -40,3 +40,11 @@ export function mars(age) {
 
 	return Math.abs(ageMars.getFullYear() - 1970);
 }
+// Return the age of a human in Jupiter years. (A Jupiter year is 11.86 Earth years.)
+export function jupiter(age) {
+	const conversionRateJupiter = 11.86;
+	let ageEarth = ageInMilliseconds(age);
+	let ageJupiter = new Date(ageEarth / conversionRateJupiter);
+
+	return Math.abs(ageJupiter.getFullYear() - 1970);
+}
