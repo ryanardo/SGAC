@@ -24,15 +24,21 @@ describe('SGAC', function () {
 	});
 	// Calculate age if born on Mercury.
 	describe('mercury', function () {
-		it('[mercury] should return 31536000 seconds.', function () {
+		it('[mercury] should return 79 years old.', function () {
 			assert.equal(79, SGAC.mercury('1989-03-07'));
 		});
 	});
-
 	// Calculate age if born on Venus.
 	describe('venus', function () {
-		it('[venus] should return 31536000 seconds.', function () {
+		it('[venus] should return 30 years old.', function () {
 			assert.equal(30, SGAC.venus('1989-03-07'));
+		});
+	});
+
+	// Calculate age if born on Mars.
+	describe('mars', function () {
+		it('[mars] should return 10 years old.', function () {
+			assert.equal(10, SGAC.mars('1989-03-07'));
 		});
 	});
 
