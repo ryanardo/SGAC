@@ -8,24 +8,24 @@ export function ageEarth(dateOfBirth) {
 
 export function ageMercury(ageEarth) {
 	let converstionRate = 0.24;
-	let age = ageEarth / converstionRate;
+	let age = Math.round(ageEarth / converstionRate);
 	return age;
 }
 
 export function ageVenus(ageEarth) {
 	let converstionRate = 0.62;
-	let age = ageEarth / converstionRate;
+	let age = Math.round(ageEarth / converstionRate);
 	return age;
 }
 
 export function ageMars(ageEarth) {
 	let converstionRate = 1.88;
-	let age = ageEarth / converstionRate;
+	let age = Math.round(ageEarth / converstionRate);
 	return age;
 }
 
 export function ageJupiter(ageEarth) {
 	let converstionRate = 11.86;
-	let age = ageEarth / converstionRate;
+	let age = Math.round(ageEarth / converstionRate);
 	return age;
 }
