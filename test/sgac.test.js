@@ -30,5 +30,12 @@ describe('SGAC', function () {
 			assert.equal(15, SGAC.ageMars(age));
 		});
 	});
+	// Calculate age on Jupiter.
+	describe('ageJupiter', function () {
+		it('[ageJupiter] should return 2.', function () {
+			let age = SGAC.ageEarth('1989-03-07');
+			assert.equal(2, SGAC.ageJupiter(age));
+		});
+	});
 	/* * * * * * * * * * End: SGAC Class Tests * * * * * * * * * */
 });
