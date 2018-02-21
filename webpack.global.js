@@ -20,7 +20,7 @@ module.exports = {
 		}),
     new CleanWebpackPlugin(['build']),
     new HtmlWebpackPlugin({
-			template: 'app/templates/index.html',
+			template: 'app/html/index.html',
 			title: 'Production'
 		})
   ],
